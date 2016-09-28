@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Having the opportunity to work with great people I want to contribute to the community to share solutions that I have encountered during my work as a developer. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[wojciech.jamrozik@gmail.com](mailto:wojciech.jamrozik@gmail.com)
