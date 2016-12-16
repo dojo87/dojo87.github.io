@@ -149,7 +149,9 @@ protected virtual void ExecuteScriptInTransaction(string script)
     }
 }
 ```
+
 Lets define the initialization of our ScriptLog table:
+
 ```csharp
 private void InitializeScriptLogTable()
 {
@@ -183,7 +185,9 @@ private List<string> GetScriptsToExecute()
     return files;
 }
 ```
+
 After executing a migration file we will have to record that fact in our ScriptLog:
+
 ```csharp
 private void RecordMigrationExecuted(string fileName)
 {
@@ -206,6 +210,7 @@ private IDataParameter AddParameterToCommand(IDbCommand command, DbType type, st
 ```
 
 Lets combine that. We will iterate through migrations and record every executed migration:
+
 ```csharp
 // Main Entry point to start executing pending migrations.
 public void Synchronize()
