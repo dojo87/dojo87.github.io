@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQL Database First Migrations
-published: false
+published: true
 comments: true
 ---
 
