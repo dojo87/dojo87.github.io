@@ -5,7 +5,6 @@ published: false
 comments: true
 ---
 
-Well, as an opening post... I would have probably never started if I would wait for some dream-topic to describe. 
 
 # What's the problem
 Probably database-first is still a frequent way of approaching databases. I had encountered some projects in my life that had some manual-driven, handy work done to make an update. One project (that was still before it's production stage) had something like a "change-backup-restore" cycle to make the changes. It was like this:
