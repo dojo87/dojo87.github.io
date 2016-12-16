@@ -2,7 +2,7 @@
 layout: post
 title: SQL Database First Migrations
 published: true
-disqus: true
+comments: true
 ---
 
 
