@@ -246,5 +246,5 @@ This is a simple version, but lets consider some more improvements (which I hope
 - extend the migration file naming convention to allow "Down" migrations? 
 
 Be sure to track any updates on GitHub or NuGet:
--NuGet: https://www.nuget.org/packages/Jamrozik.SqlForward
--GitHub: https://github.com/dojo87/Jamrozik.SqlForward
+- NuGet: https://www.nuget.org/packages/Jamrozik.SqlForward
+- GitHub: https://github.com/dojo87/Jamrozik.SqlForward
