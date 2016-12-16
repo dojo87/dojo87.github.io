@@ -8,6 +8,7 @@ disqus: true
 
 ## What's the problem
 Probably database-first is still a frequent way of approaching databases. I had encountered some projects in my life that had some manual-driven, handy work done to make an update. One project (that was still before it's production stage) had something like a "change-backup-restore" cycle to make the changes. It was like this:
+
 * somebody wanted to make a change on a database - he shouted to the team, that he will be doing so (yep, that is a "lock" on the database mechanism)
 * the person firstly restored a last backup of the database (so the changes made were clean), done his changes...
 * ...and made a backup which was then commited to SVN
@@ -20,6 +21,7 @@ Before we have gone to a state of automatic updates, there was some time of addi
 
 ## What's the idea
 What ideas developers have for solving this? 
+
 * the one I've described - manual scripts ( bad idea)
 * SQL compare tools (like Redgate SQL Compare - http://www.red-gate.com/products/sql-development/sql-compare/ ) - not bad, but still some manual work. What about some test stuff developers insert in a database? What if you need to make an explicit insert to the production?
 * How about ... database-first migrations?
@@ -245,6 +247,7 @@ private void IterateMigrations(List<string> executedScriptNames, List<string> fi
 ```
 
 This is a simple version, but lets consider some more improvements (which I hope to add to the NuGet package!)
+
 * extending the ScriptLog table (giving it a generic structure that the Developer can define), so that he can log more information like executing user, application name).
 * adding dynamic parameters to the execution, so that we can make use of any app settings or other dynamic variables.
 * extending the migration naming convention to contain an environment variable e.g. 20161216_MyMigration.Production.sql, so we can differentiate between Test, Production, Dev (probably used for some specific configuration inserts that would be different on different environments).
@@ -253,5 +256,6 @@ This is a simple version, but lets consider some more improvements (which I hope
 * extend the migration file naming convention to allow "Down" migrations? 
 
 Be sure to track any updates on GitHub or NuGet:
+
 * NuGet: https://www.nuget.org/packages/Jamrozik.SqlForward
 * GitHub: https://github.com/dojo87/Jamrozik.SqlForward
