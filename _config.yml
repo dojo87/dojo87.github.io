@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Dojo of Jamrozik.net
+name: The Dojo of Jamrozik.net
 
 # Short bio or description (displayed in the header)
 description: Technology blog for various solutions and issues I've encountered in the programming world. 
@@ -19,6 +19,7 @@ avatar: http://jamrozik.net/content/jamrozik.net.jpg
 footer-links:
   dribbble:
   email:
+  url: http://www.jamrozik.net
   facebook:
   flickr:
   github: dojo87
